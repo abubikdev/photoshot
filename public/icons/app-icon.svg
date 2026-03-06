@@ -1,0 +1,50 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="62" y1="52" x2="452" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8" />
+      <stop offset="0.48" stop-color="#0EA5E9" />
+      <stop offset="1" stop-color="#0F172A" />
+    </linearGradient>
+    <radialGradient id="glow-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(174 118) rotate(49.2) scale(178 224)">
+      <stop stop-color="#F8FAFC" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#F8FAFC" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="body-gradient" x1="136" y1="150" x2="382" y2="386" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E2E8F0" stop-opacity="0.96" />
+      <stop offset="1" stop-color="#CBD5E1" stop-opacity="0.88" />
+    </linearGradient>
+    <radialGradient id="lens-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 271) rotate(90) scale(106)">
+      <stop offset="0" stop-color="#E0F2FE" />
+      <stop offset="0.36" stop-color="#38BDF8" />
+      <stop offset="0.67" stop-color="#0284C7" />
+      <stop offset="1" stop-color="#0F172A" />
+    </radialGradient>
+    <linearGradient id="slot-gradient" x1="170" y1="164" x2="250" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" stop-opacity="0.7" />
+      <stop offset="1" stop-color="#0F172A" stop-opacity="0.32" />
+    </linearGradient>
+    <filter id="shadow" x="92" y="120" width="328" height="312" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dy="14" />
+      <feGaussianBlur stdDeviation="12" />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.059 0 0 0 0 0.09 0 0 0 0 0.161 0 0 0 0.4 0" />
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2" />
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape" />
+    </filter>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="116" fill="url(#bg-gradient)" />
+  <rect x="24" y="24" width="464" height="464" rx="116" fill="url(#glow-gradient)" />
+
+  <g filter="url(#shadow)">
+    <rect x="116" y="144" width="280" height="264" rx="72" fill="url(#body-gradient)" />
+    <rect x="166" y="164" width="96" height="28" rx="14" fill="url(#slot-gradient)" />
+    <circle cx="256" cy="271" r="94" fill="#F8FAFC" fill-opacity="0.28" />
+    <circle cx="256" cy="271" r="82" fill="url(#lens-gradient)" />
+    <circle cx="256" cy="271" r="37" fill="#0F172A" />
+    <circle cx="342" cy="206" r="14" fill="#F8FAFC" fill-opacity="0.86" />
+    <circle cx="332" cy="196" r="5" fill="#E0F2FE" />
+  </g>
+</svg>
